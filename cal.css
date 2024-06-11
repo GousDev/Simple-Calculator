@@ -1,0 +1,69 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(255, 0, 0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+     height: 50% ;
+     top: 100px;
+    position:absolute;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 320px;
+    position: relative;
+    padding: 20px 15px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: right;
+    outline: none;
+    /* border: none; */
+    padding: 0px 5px;
+    background-color: aliceblue;
+    pointer-events: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.buttons button:active {
+    transform: scale(30px);
+    background-color: darkgrey;
+}
+
+.operator {
+    background-color: rgb(0, 0, 0);
+    color: red;
+}
+.equal{
+    grid-row:2 span;
+}
